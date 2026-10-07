@@ -193,6 +193,46 @@ section{
   color:var(--muted);
 }
 
+
+/* RESTORED PROFESSIONAL CONTENT */
+.role{
+  display:grid;
+  grid-template-columns:190px 1fr;
+  gap:40px;
+  padding:30px 0;
+  border-top:1px solid var(--line);
+}
+.role:last-child{border-bottom:1px solid var(--line)}
+.role-date,.edu-year{
+  color:var(--gold);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-weight:600;
+}
+.role h3,.edu-card h3,.skill-card h3{
+  font-family:"Playfair Display",serif;
+}
+.role h3{font-size:27px;line-height:1.2;margin:0 0 5px}
+.role h4{font-size:13px;color:var(--muted);margin:0 0 15px;font-weight:500}
+.role p{color:var(--muted);margin:0;max-width:800px}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.edu-card,.skill-card{background:#fff;border:1px solid var(--line);padding:28px}
+.edu-card h3{font-size:24px;line-height:1.2;margin:14px 0 7px}
+.edu-card p,.skill-card p{margin:0;color:var(--muted);font-size:13px}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill-card h3{font-size:22px;line-height:1.2;margin:0 0 8px}
+.languages{margin-top:55px}
+.language-list{display:flex;flex-wrap:wrap;gap:9px}
+.language-tag{border:1px solid var(--line);padding:9px 13px;font-size:12px;color:#514d47}
+.contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
+.contact-links .button{margin-top:0}
+
+@media(max-width:850px){
+  .role,.edu-grid,.skills-grid{grid-template-columns:1fr}
+  .role{gap:10px}
+}
+
 /* PHOTOGRAPHY */
 
 .photography{
@@ -384,10 +424,13 @@ footer{
 <body>
 
 <nav>
-  <a class="logo" href="#home">AKM</a>
+  <a class="logo" href="#home">Arrafi</a>
 
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
     <a href="#photography">Photography</a>
     <a href="#hotwheels">Hot Wheels</a>
     <a href="#poetry">Poetry</a>
@@ -480,6 +523,77 @@ footer{
 
 </section>
 
+
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-kicker">Professional Journey</div>
+  <h2 class="section-title">Experience</h2>
+  <div class="role">
+    <div class="role-date">June 2023 — Present</div>
+    <div><h3>Sales Executive (Catering Sales)</h3><h4>InterContinental Dhaka, Bangladesh</h4><p>Manage client relationships and event execution while identifying new business opportunities. Prepare BEOs, negotiate rates, develop tailored proposals, use Delphi and Merlin for bookings and sales activities, and collaborate with operational departments for seamless event delivery.</p></div>
+  </div>
+  <div class="role">
+    <div class="role-date">February 2023 — June 2023</div>
+    <div><h3>Management Trainee Officer (Catering Sales)</h3><h4>The Westin Dhaka, Bangladesh</h4><p>Coordinated client consultations, presented event solutions, managed bookings through CI/TY, and supported seamless event execution through communication and follow-up.</p></div>
+  </div>
+  <div class="role">
+    <div class="role-date">December 2022 — January 2023</div>
+    <div><h3>Executive in Sales Department</h3><h4>TravelChamp, Dhaka, Bangladesh</h4><p>Supported business growth through sales initiatives, service promotion and identification of revenue-generating opportunities.</p></div>
+  </div>
+  <div class="role">
+    <div class="role-date">July 2020 — August 2020</div>
+    <div><h3>Internship Trainee</h3><h4>Embassy of Bangladesh, Athens, Greece</h4><p>Gained cross-functional experience across embassy operations, with a focus on event reporting, coordination and execution.</p></div>
+  </div>
+  <div class="role">
+    <div class="role-date">May 2018 — September 2018</div>
+    <div><h3>Internship F&amp;B Service Trainee</h3><h4>Aldemar Resorts, Rhodes, Greece</h4><p>Supported operations across multiple F&amp;B outlets, with key experience in the Chinese restaurant and main bar.</p></div>
+  </div>
+  <div class="role">
+    <div class="role-date">May 2017 — September 2017</div>
+    <div><h3>Internship F&amp;B Service Trainee</h3><h4>Aldemar Resorts, Peloponnese, Greece</h4><p>Developed practical experience in restaurant and bar service operations.</p></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-kicker">Academic Background</div>
+  <h2 class="section-title">Education</h2>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <div class="edu-year">2021 — 2022</div>
+      <h3>MBA for Executives</h3>
+      <p>Hospitality &amp; Tourism Management<br>Business College of Athens in Partnership with University of West London</p>
+    </div>
+    <div class="edu-card">
+      <div class="edu-year">2017 — 2021</div>
+      <h3>BA (Hons)</h3>
+      <p>Hospitality &amp; Tourism Management<br>Business College of Athens in Partnership with Plymouth University</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS & LANGUAGES -->
+<section id="skills">
+  <div class="section-kicker">Capabilities</div>
+  <h2 class="section-title">Skills &amp; Languages</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h3>Business Development</h3><p>Identifying opportunities and supporting sustainable commercial growth.</p></div>
+    <div class="skill-card"><h3>Client Relationship Management</h3><p>Building professional relationships and understanding client requirements.</p></div>
+    <div class="skill-card"><h3>Catering &amp; Event Sales</h3><p>Developing proposals, coordinating requirements and supporting event delivery.</p></div>
+    <div class="skill-card"><h3>Negotiation</h3><p>Managing rates, proposals and commercial discussions.</p></div>
+    <div class="skill-card"><h3>Revenue Generation</h3><p>Supporting sales activity, pipeline development and revenue optimization.</p></div>
+    <div class="skill-card"><h3>Guest Experience</h3><p>Focused on professional service and seamless event experiences.</p></div>
+  </div>
+  <div class="languages">
+    <h3>Languages</h3>
+    <div class="language-list">
+      <span class="language-tag">Bangla — Native</span>
+      <span class="language-tag">English — Fluent</span>
+      <span class="language-tag">Hindi — Limited Work Proficiency</span>
+    </div>
+  </div>
+</section>
 
 <!-- PHOTOGRAPHY -->
 
@@ -656,6 +770,12 @@ People will remember you for more than a thousand years.</div>
     Some stories belong on a website. Others are better discovered
     through conversation.
   </p>
+
+  <div class="contact-links">
+    <a class="button" href="mailto:oikya007@gmail.com">Email</a>
+    <a class="button" href="https://www.linkedin.com/in/arrafi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="button" href="https://www.arrafi.bd/">Website</a>
+  </div>
 
 </section>
 
